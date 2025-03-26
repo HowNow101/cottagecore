@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchanted Cottagecore Decor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif;
+        }
+
+        body {
+            background-color: #f9f7f0;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('https://images/ccimage1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .hero-content {
+            background: rgba(255,255,255,0.9);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: #3a5a40;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0 auto 40px;
+            max-width: 600px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            width: 45%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            color: #588157;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 25px;
+            min-height: 60px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 35px;
+            background-color: #588157;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background-color: #3a5a40;
+            transform: scale(1.05);
+        }
+
+        .disclaimer {
+            text-align: center;
+            margin: 60px 20px 20px;
+            font-size: 0.8rem;
+            color: #666;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: 50vh;
+            }
+            
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Whimsical Cottagecore Living</h1>
+            <p class="description">Create your storybook home with handpicked decor that blends rustic charm and magical comfort. Discover pieces that whisper of woodland adventures and sun-dappled meadows.</p>
+        </div>
+    </section>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="https://images/ccimage2.jpg">
+            <h2>Bedroom Serenity</h2>
+            <p>Craft a dreamy retreat with vintage linens, floral motifs, and delicate lighting that evokes morning dew on petals.</p>
+            <a href="https://amzn.to/4c5EbJ7" class="btn" target="_blank" rel="noopener noreferrer">Explore Bedroom Magic</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images/ccimage3.jpg">
+            <h2>Living Room Warmth</h2>
+            <p>Curate a welcoming hearth with botanical prints, cozy textiles, and earth-toned accents for perfect gatherings.</p>
+            <a href="https://amzn.to/3QL7" class="btn" target="_blank" rel="noopener noreferrer">Discover Living Room Charm</a>
+        </div>
+    </div>
+
+    <p class="disclaimer"><strong>Affiliate Disclosure:</strong> This page contains Amazon affiliate links that may earn us a small commission at no extra cost to you. We only recommend products we truly love.</p>
+</body>
+</html>
